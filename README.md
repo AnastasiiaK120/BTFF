@@ -41,9 +41,4 @@ And navigate to `http://127.0.0.1:8000/`.
 
 
 
-![Screenshot from 2022-08-15 06-06-30](https://user-images.githubusercontent.com/82476413/184621380-a0eef8a4-9974-4fc8-bdbd-595938fc115a.png)
-![Screenshot from 2022-08-15 06-08-46](https://user-images.githubusercontent.com/82476413/184621382-60d27f85-9ffc-46eb-9208-d87e5943e9c7.png)
-
-
-
 
