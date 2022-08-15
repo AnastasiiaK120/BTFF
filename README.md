@@ -12,7 +12,8 @@ The first thing to do is to clone the repository:
 
 ```sh
 $ git clone https://github.com/AnastasiiaK120/BTFF.git
-$ cd blacktopfantasyfootball
+$ cd BTFF
+
 ```
 
 Create a virtual environment to install dependencies in and activate it:
