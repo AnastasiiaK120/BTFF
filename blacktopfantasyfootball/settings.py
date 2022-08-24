@@ -103,7 +103,7 @@ DATABASES = {
         'USER': 'kpcwgwlgasiuvi',
         'PASSWORD': 'a1ad2ccab734a26dd88feb06c80fc7b24cc3f7ad250e1eef5dafbfe471233293',
 
-        'HOST': 'localhost',
+        'HOST': 'ec2-107-22-122-106.compute-1.amazonaws.com',
         'PORT': '5432',
 
     }
