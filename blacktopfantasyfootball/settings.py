@@ -99,9 +99,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'football_new',
-        'USER': 'myuser15',
-        'PASSWORD': 'pwd1345',
+        'NAME': 'd43ddguiu53udo',
+        'USER': 'kpcwgwlgasiuvi',
+        'PASSWORD': 'a1ad2ccab734a26dd88feb06c80fc7b24cc3f7ad250e1eef5dafbfe471233293',
 
         'HOST': 'localhost',
         'PORT': '5432',
