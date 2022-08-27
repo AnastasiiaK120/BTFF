@@ -1,1 +1,1 @@
-web:gunicorn blacktopfantasyfootball.wsgi
+web: gunicorn blacktopfantasyfootball.wsgi
