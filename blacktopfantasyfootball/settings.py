@@ -53,6 +53,7 @@ INTERNAL_IPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "django_browser_reload.middleware.BrowserReloadMiddleware",
     'django.middleware.common.CommonMiddleware',
@@ -86,27 +87,27 @@ WSGI_APPLICATION = 'blacktopfantasyfootball.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#
-#         'NAME': 'd43ddguiu53udo',
-#         'USER': 'kpcwgwlgasiuvi',
-#         'PASSWORD': 'a1ad2ccab734a26dd88feb06c80fc7b24cc3f7ad250e1eef5dafbfe471233293',
-#
-#         'HOST': 'ec2-107-22-122-106.compute-1.amazonaws.com',
-#         'PORT': '5432',
-#
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'd43ddguiu53udo',
+        'USER': 'kpcwgwlgasiuvi',
+        'PASSWORD': 'a1ad2ccab734a26dd88feb06c80fc7b24cc3f7ad250e1eef5dafbfe471233293',
+
+        'HOST': 'ec2-107-22-122-106.compute-1.amazonaws.com',
+        'PORT': '5432',
+
+    }
+}
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -148,7 +149,10 @@ USE_TZ = True
 # STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
+# STATICFILES_DIRS = []
 # django_heroku.settings(locals())
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
