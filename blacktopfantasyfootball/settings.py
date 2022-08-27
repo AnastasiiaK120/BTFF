@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9__97852)ryzpcvsc!f!j)v2vn=gu-&#oy(&j=4z053%i4hi+m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['btff1.herokuapp.com']
 
 
 # Application definition
@@ -96,19 +96,19 @@ WSGI_APPLICATION = 'blacktopfantasyfootball.wsgi.application'
 # }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'd43ddguiu53udo',
-        'USER': 'kpcwgwlgasiuvi',
-        'PASSWORD': 'a1ad2ccab734a26dd88feb06c80fc7b24cc3f7ad250e1eef5dafbfe471233293',
+#         'NAME': 'd43ddguiu53udo',
+#         'USER': 'kpcwgwlgasiuvi',
+#         'PASSWORD': 'a1ad2ccab734a26dd88feb06c80fc7b24cc3f7ad250e1eef5dafbfe471233293',
 
-        'HOST': 'ec2-107-22-122-106.compute-1.amazonaws.com',
-        'PORT': '5432',
+#         'HOST': 'ec2-107-22-122-106.compute-1.amazonaws.com',
+#         'PORT': '5432',
 
-    }
-}
+#     }
+# }
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
