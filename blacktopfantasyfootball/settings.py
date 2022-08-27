@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9__97852)ryzpcvsc!f!j)v2vn=gu-&#oy(&j=4z053%i4hi+m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,7 +53,8 @@ INTERNAL_IPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.middleware.WhiteNoiseMiddleware',
+    # 'django.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "django_browser_reload.middleware.BrowserReloadMiddleware",
     'django.middleware.common.CommonMiddleware',
@@ -99,11 +100,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'd43ddguiu53udo',
-        'USER': 'kpcwgwlgasiuvi',
-        'PASSWORD': 'a1ad2ccab734a26dd88feb06c80fc7b24cc3f7ad250e1eef5dafbfe471233293',
+        'NAME': 'df00a0pghpnncb',
+        'USER': 'pmtuqvaapawmzm',
+        'PASSWORD': '9d488188cfaee6db82f9973fbfd321c94cdf19d4d5c629873f8e8844c858f930',
 
-        'HOST': 'ec2-107-22-122-106.compute-1.amazonaws.com',
+        'HOST': 'ec2-54-159-175-38.compute-1.amazonaws.com',
         'PORT': '5432',
 
     }
